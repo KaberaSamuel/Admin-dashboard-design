@@ -6,36 +6,54 @@
     <title>User Dashboard</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <style>
-      i {
-        display: inline-block;
-        padding: 10px;
-        border: 1px solid black;
-        color: white;
-        font-size: 2rem;
-      }
-    </style>
   </head>
   <body>
     <aside>
-      <div id="home"><p>Dashboard</p></div>
+      <div id="home">
+        <span class="material-symbols-outlined"> browse </span>
+        <p>Dashboard</p>
+      </div>
       <section>
-        <div><p>Home</p></div>
-        <div><p>Profile</p></div>
-        <div><p>Messages</p></div>
-        <div><p>History</p></div>
-        <div><p>Tasks</p></div>
-        <div><p>Communities</p></div>
+        <div>
+          <span class="material-symbols-outlined"> home </span>
+          <p>Home</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> person </span>
+          <p>Profile</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> sms </span>
+          <p>Messages</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> history </span>
+          <p>History</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> note_stack </span>
+          <p>Tasks</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> groups </span>
+          <p>Communities</p>
+        </div>
       </section>
       <section>
-        <div><p>Settings</p></div>
-        <div><p>Support</p></div>
-        <div><p>Privacy</p></div>
+        <div>
+          <span class="material-symbols-outlined"> settings </span>
+          <p>Settings</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> help </span>
+          <p>Support</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> policy </span>
+          <p>Privacy</p>
+        </div>
       </section>
     </aside>
 
@@ -43,29 +61,22 @@
       <section class="top">
         <nav>
           <div>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" />
-            <i class="fa-regular fa-bell-ring"></i>
+            <span class="material-symbols-outlined"> search </span>
+            <input type="text" /><span class="material-symbols-outlined">
+              notifications_active
+            </span>
           </div>
           <div>
-            <img
-              src="Images/profile image.jpg"
-              alt="Profile image"
-              width="400px"
-              height="500px"
-            />
+            <img src="Images/cartoon-1.png" alt="profile-picture" width="100" />
             <p>Morgan Oakley</p>
           </div>
         </nav>
 
         <section>
           <div>
-            <img
-              src="Images/profile image.jpg"
-              alt="Profile image"
-              width="400px"
-              height="500px"
-            />
+            <img src="Images/cartoon-1.png" alt="profile-picture" width="100" />
+          </div>
+          <div>
             <p>Hi there,</p>
             <p>Morgan Oakley (@morgan)</p>
           </div>
@@ -77,27 +88,32 @@
         </section>
       </section>
 
-      <section class="grid">
+      <section class="cards">
         <section class="left">
           <h2>Your Projects</h2>
-          <div>
-            <h2>Super Cool Project</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              dolorem ab veniam praesentium illum laudantium enim vitae, hic
-              necessitatibus dolore!
-            </p>
+          <section class="left-grid">
             <div>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-thin fa-eye"></i>
-              <i class="fa-brands fa-webflow"></i>
+              <h2>Super Cool Project</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                dolorem ab veniam praesentium illum laudantium enim vitae, hic
+                necessitatibus dolore! Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. At, incidunt.
+              </p>
+              <div>
+                <span class="material-symbols-outlined"> add_task </span>
+                <span class="material-symbols-outlined"> visibility_lock </span>
+                <span class="material-symbols-outlined"> share </span>
+                <p>Above there the icons</p>
+              </div>
             </div>
-          </div>
-          <!-- <div></div>
+          </section>
+
           <div></div>
           <div></div>
           <div></div>
-          <div></div> -->
+          <div></div>
+          -->
         </section>
       </section>
     </main>
