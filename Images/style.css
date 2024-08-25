@@ -29,11 +29,6 @@ nav {
   height: 100px;
 }
 
-/* .top > * {
-    border: red 1px solid;
-    margin: 5px;
-  } */
-
 nav div:last-child {
   display: flex;
 }
@@ -48,15 +43,20 @@ nav div:last-child {
   /* border: blue 1px solid; */
 }
 
-.d
-  
-  /* left cards */
-  .left-cards {
+/* left cards */
+.left-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  padding: 20px;
+  background: gray;
 }
 
 .left-cards .card {
   border: rgb(59, 208, 37) 2px solid;
+}
+
+h2 {
+  display: inline;
+  width: 60px;
 }

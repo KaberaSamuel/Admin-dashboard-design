@@ -1,0 +1,137 @@
+/* general styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --lightblue: rgb(78, 149, 185);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 0.9rem;
+  display: grid;
+  grid-template-areas:
+    "aside top"
+    "aside main";
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+a {
+  width: 95px;
+  padding: 7px 0;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  background-color: var(--lightblue);
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+input {
+  width: 500px;
+  border-radius: 20px;
+}
+
+/* aside section */
+aside {
+  background-color: var(--lightblue);
+  grid-area: aside;
+  padding: 50px 20px;
+  color: white;
+}
+
+aside div {
+  /* border: red 1px solid; */
+  display: flex;
+  gap: 15px;
+}
+
+aside section div {
+  margin: 20px 0;
+}
+
+aside > * {
+  margin-bottom: 7vh;
+}
+
+/* top section */
+.top {
+  background-color: white;
+  grid-area: top;
+  padding: 25px 40px 5px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+.top > * {
+  /* border: blue 2px solid; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.top > * > * {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* main section */
+.main {
+  grid-area: main;
+  background-color: rgb(234, 234, 234);
+  padding: 15px 10px 30px;
+  display: grid;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  border: black 3px dotted;
+}
+
+.main > * {
+  border: red 1px solid;
+}
+
+.projects-container {
+  grid-area: projects;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 5px 0;
+}
+
+.projects > * {
+  border: green 2px dotted;
+  padding: 10px;
+}
+
+.announcements {
+  grid-area: announcements;
+}
+
+.trending {
+  grid-area: trending;
+}
